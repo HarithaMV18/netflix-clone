@@ -15,10 +15,10 @@ function App() {
       <Row title="Animation Movies" fetchURL={categories.animation_movies} />
       <Row title="Comedy Movies" fetchURL={categories.comedy_movies} />
       <Row title="Crime Movies" fetchURL={categories.crime_movies} />
-      <Row
+      {/* <Row
         title="Documentary Movies"
         fetchURL={categories.documentary_movies}
-      />
+      /> */}
       <Row title="Drama Movies" fetchURL={categories.drama_movies} />
       <Row title="Family Movies" fetchURL={categories.family_movies} />
       <Row title="Mystery Movies" fetchURL={categories.mystery_movies} />

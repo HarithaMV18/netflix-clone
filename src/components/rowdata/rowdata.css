@@ -1,20 +1,43 @@
-.movie-poster {
+.movie-poster,
+.movie-poster-size {
     width: 100%;
     transition: transform 0.5s;
-    margin: 10px 15px;
-
+    margin: 10px 12px;
 }
 
-
-
-
-.movie-poster:hover {
+.movie-poster:hover,
+.movie-poster-size:hover {
     transform: scale(1.2);
-
+    cursor: pointer;
 }
 
 .movie-poster img {
     width: 180px;
     object-fit: cover;
     border-radius: 10px;
+    /* height: 100%; */
+}
+
+.movie-poster-size img {
+    width: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    /* height: 100%; */
+}
+
+@media (max-width:500px) {
+
+    .movie-poster,
+    .movie-poster-size {
+        margin: 10px 8px;
+    }
+
+    .movie-poster img {
+        width: 150px;
+    }
+
+    .movie-poster-size img {
+        width: 90px;
+    }
+
 }
